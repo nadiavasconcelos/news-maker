@@ -1,0 +1,745 @@
+2014-09-25 17:32:44 Error: [MissingControllerException] Controller class ClientesController could not be found.
+Exception Attributes: array (
+  'class' => 'ClientesController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/admin/clientes
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 17:33:03 Error: [MissingControllerException] Controller class ClientesController could not be found.
+Exception Attributes: array (
+  'class' => 'ClientesController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/admin/clientes
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 18:54:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Clientes.nome' in 'order clause'
+Request URL: /news-maker/admin/clientes
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Cliente...', Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `Cliente...', Array, Array)
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `Cliente...', false)
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(2694): DboSource->read(Object(Cliente), Array)
+#5 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#6 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(1074): PaginatorComponent->paginate('Cliente', Array, Array)
+#7 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Controller/ClientesController.php(33): Controller->paginate('Cliente')
+#8 [internal function]: ClientesController->admin_index()
+#9 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#10 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-09-25 18:55:12 Error: Fatal Error (64): Cannot redeclare class Clientes in [/Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Model/Cliente.php, line 10]
+2014-09-25 18:55:12 Error: [FatalErrorException] Cannot redeclare class Clientes
+Request URL: /news-maker/admin/clientes
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/nadia.va...', 10)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/nadia.va...', 10, Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/nadia.va...', 10, Array)
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-25 18:55:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Clientes.nome' in 'order clause'
+Request URL: /news-maker/admin/clientes
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Cliente...', Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `Cliente...', Array, Array)
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `Cliente...', false)
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(2694): DboSource->read(Object(Cliente), Array)
+#5 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#6 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(1074): PaginatorComponent->paginate('Cliente', Array, Array)
+#7 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Controller/ClientesController.php(33): Controller->paginate('Cliente')
+#8 [internal function]: ClientesController->admin_index()
+#9 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ClientesController), Array)
+#10 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-09-25 19:39:51 Error: [MissingActionException] Action TemplatesController::admin_cadastrar() could not be found.
+Exception Attributes: array (
+  'controller' => 'TemplatesController',
+  'action' => 'admin_cadastrar',
+)
+Request URL: /news-maker/admin/templates/cadastrar
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TemplatesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-25 19:39:53 Error: [MissingViewException] View file "/Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/plugins/Adminable/View/Themed/Adminus/Templates/admin_add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/plugins/Adminable/View/Themed/Adminus/Templates/admin_add.ctp',
+)
+Request URL: /news-maker/admin/templates/add
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TemplatesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-25 21:01:24 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Controller/TemplatesController.php, line 54]
+2014-09-25 21:01:24 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /news-maker/admin/templates/add
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/nadia.va...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/nadia.va...', 54, Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/nadia.va...', 54, Array)
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-25 21:11:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 21:14:27 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 21:22:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 21:25:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/teste.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 21:28:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 21:28:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/teste.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 21:30:20 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 21:30:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 21:31:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 21:41:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/admin/teste.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 21:42:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/css/js/admin.css
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 21:42:02 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 21:42:02 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 21:42:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 21:42:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/admin/teste.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 21:42:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/css/js/admin.css
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 21:43:37 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 21:43:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 21:49:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 22:18:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-25 22:31:08 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'template_id' cannot be null
+Request URL: /news-maker/admin/templates/add
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `ne...', Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(1008): DboSource->execute('INSERT INTO `ne...')
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(1742): DboSource->create(Object(Field), Array, Array)
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(2110): Model->save(Array, Array)
+#5 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Controller/TemplatesController.php(62): Model->saveMany(Array)
+#6 [internal function]: TemplatesController->admin_add()
+#7 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(TemplatesController), Array)
+#8 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TemplatesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-25 22:51:15 Error: Fatal Error (1): Call to undefined method TemplatesController::find() in [/Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Controller/TemplatesController.php, line 39]
+2014-09-25 22:51:15 Error: [FatalErrorException] Call to undefined method TemplatesController::find()
+Request URL: /news-maker/admin/templates/view/7
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/nadia.va...', 39)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/nadia.va...', 39, Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/nadia.va...', 39, Array)
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-25 22:51:42 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+Request URL: /news-maker/admin/templates/view/7
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Templat...', Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `Templat...', Array, Array)
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `Templat...', false)
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(2694): DboSource->read(Object(Template), Array)
+#5 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Controller/TemplatesController.php(39): Model->find('first', Array)
+#6 [internal function]: TemplatesController->admin_view('7')
+#7 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(TemplatesController), Array)
+#8 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TemplatesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-25 23:05:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/templates.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-06 20:21:17 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Can\'t connect to local MySQL server through socket \'/Applications/MAMP/tmp/mysql/mysql.sock\' (2)',
+  'enabled' => true,
+)
+Request URL: /news-maker/admin/
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(262): Mysql->connect()
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/ConnectionManager.php(108): DboSource->__construct(Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(3215): ConnectionManager::getDataSource('default')
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(1108): Model->setDataSource('default')
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(3237): Model->setSource('users')
+#5 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(1319): Model->getDataSource()
+#6 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/View/Helper/FormHelper.php(198): Model->schema()
+#7 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/View/Helper/FormHelper.php(448): FormHelper->_introspectModel('User', 'fields')
+#8 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/View/Themed/Adminus/Users/admin_login.ctp(5): FormHelper->create('User', Array)
+#9 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/View/View.php(947): include('/Users/nadia.va...')
+#10 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/View/View.php(909): View->_evaluate('/Users/nadia.va...', Array)
+#11 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/View/View.php(471): View->_render('/Users/nadia.va...')
+#12 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#13 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#14 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-01-06 20:29:21 Error: [MissingActionException] Action TemplatesController::admin_edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'TemplatesController',
+  'action' => 'admin_edit',
+)
+Request URL: /news-maker/admin/templates/edit/7
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TemplatesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-06 20:30:13 Error: [MissingActionException] Action TemplatesController::admin_edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'TemplatesController',
+  'action' => 'admin_edit',
+)
+Request URL: /news-maker/admin/templates/edit/7
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TemplatesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-06 20:39:41 Error: [MissingActionException] Action TemplatesController::admin_edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'TemplatesController',
+  'action' => 'admin_edit',
+)
+Request URL: /news-maker/admin/templates/edit/8
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TemplatesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-06 21:01:07 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'template_id' cannot be null
+Request URL: /news-maker/admin/templates/edit/8
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `ne...', Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(1008): DboSource->execute('INSERT INTO `ne...')
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(1742): DboSource->create(Object(Field), Array, Array)
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(2110): Model->save(Array, Array)
+#5 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Controller/TemplatesController.php(67): Model->saveMany(Array)
+#6 [internal function]: TemplatesController->admin_edit('8')
+#7 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(TemplatesController), Array)
+#8 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TemplatesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-01-06 21:04:41 Error: [MissingActionException] Action TemplatesController::admin_del() could not be found.
+Exception Attributes: array (
+  'controller' => 'TemplatesController',
+  'action' => 'admin_del',
+)
+Request URL: /news-maker/admin/templates/del/7
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TemplatesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-15 20:21:50 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/View/Themed/Adminus/Elements/Templates/form.ctp, line 26]
+2015-01-15 20:21:50 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /news-maker/admin/templates/edit/8
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/nadia.va...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/nadia.va...', 26, Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/nadia.va...', 26, Array)
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-16 14:09:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/admin/newsletters.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 14:11:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/admin/newsletters.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 14:12:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/admin/newsletters.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 14:12:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/admin/newsletters.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 14:16:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/admin/newsletters.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 14:16:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /news-maker/js/admin/newsletters.js
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 14:28:35 Error: [MissingViewException] View file "/Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/plugins/Adminable/View/Themed/Adminus/Clientes/admin_callclientes.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/plugins/Adminable/View/Themed/Adminus/Clientes/admin_callclientes.ctp',
+)
+Request URL: /news-maker/admin/clientes/callclientes
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ClientesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-16 14:31:42 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'findTemplateByClientId' at line 1
+Request URL: /news-maker/admin/templates/calltemplates
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('findTemplateByC...', Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('findTemplateByC...', Array, Array)
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('findTemplateByC...', Array, Array)
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(800): DboSource->query('findTemplateByC...', Array, Object(Template))
+#5 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Model/Template.php(27): Model->__call('findTemplateByC...', Array)
+#6 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Model/Template.php(27): Template->findTemplateByClientId('list', NULL)
+#7 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Controller/TemplatesController.php(91): Template->listtemplates(NULL)
+#8 [internal function]: TemplatesController->admin_calltemplates()
+#9 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(TemplatesController), Array)
+#10 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TemplatesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-01-16 14:32:01 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'findTemplateByClientId' at line 1
+Request URL: /news-maker/admin/templates/calltemplates/2
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('findTemplateByC...', Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('findTemplateByC...', Array, Array)
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('findTemplateByC...', Array, Array)
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(800): DboSource->query('findTemplateByC...', Array, Object(Template))
+#5 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Model/Template.php(27): Model->__call('findTemplateByC...', Array)
+#6 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Model/Template.php(27): Template->findTemplateByClientId('list', '2')
+#7 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Controller/TemplatesController.php(91): Template->listtemplates('2')
+#8 [internal function]: TemplatesController->admin_calltemplates('2')
+#9 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(TemplatesController), Array)
+#10 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TemplatesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-01-16 14:32:33 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'findTemplateByClienteId' at line 1
+Request URL: /news-maker/admin/templates/calltemplates/2
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('findTemplateByC...', Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('findTemplateByC...', Array, Array)
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('findTemplateByC...', Array, Array)
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(800): DboSource->query('findTemplateByC...', Array, Object(Template))
+#5 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Model/Template.php(27): Model->__call('findTemplateByC...', Array)
+#6 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Model/Template.php(27): Template->findTemplateByClienteId('list', '2')
+#7 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Controller/TemplatesController.php(91): Template->listtemplates('2')
+#8 [internal function]: TemplatesController->admin_calltemplates('2')
+#9 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(TemplatesController), Array)
+#10 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TemplatesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-01-16 14:33:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Template.client_id' in 'where clause'
+Request URL: /news-maker/admin/templates/calltemplates/2
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Templat...', Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `Templat...', Array, Array)
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `Templat...', false)
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(2694): DboSource->read(Object(Template), Array)
+#5 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Model/Template.php(27): Model->find('list', Array)
+#6 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Controller/TemplatesController.php(91): Template->listtemplates('2')
+#7 [internal function]: TemplatesController->admin_calltemplates('2')
+#8 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(TemplatesController), Array)
+#9 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TemplatesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-01-16 15:21:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Field.titulo' in 'field list'
+Request URL: /news-maker/admin/fields/callfields/8
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Field`....', Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `Field`....', Array, Array)
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `Field`....', false)
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(2694): DboSource->read(Object(Field), Array)
+#5 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Model/Field.php(23): Model->find('list', Array)
+#6 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Controller/FieldsController.php(52): Field->listfields('8')
+#7 [internal function]: FieldsController->admin_callfields('8')
+#8 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(FieldsController), Array)
+#9 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FieldsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-01-16 15:22:08 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Template.cliente_id' in 'where clause'
+Request URL: /news-maker/admin/fields/callfields/8
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Field`....', Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `Field`....', Array, Array)
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `Field`....', false)
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(2694): DboSource->read(Object(Field), Array)
+#5 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Model/Field.php(23): Model->find('list', Array)
+#6 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Controller/FieldsController.php(52): Field->listfields('8')
+#7 [internal function]: FieldsController->admin_callfields('8')
+#8 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(FieldsController), Array)
+#9 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FieldsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-01-23 12:57:41 Error: [MissingActionException] Action TemplatesController::admin_del() could not be found.
+Exception Attributes: array (
+  'controller' => 'TemplatesController',
+  'action' => 'admin_del',
+)
+Request URL: /news-maker/admin/templates/del/7
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TemplatesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-23 13:16:10 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in [/Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Model/Field.php, line 4]
+2015-01-23 13:16:10 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /news-maker/admin/templates/add
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/nadia.va...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/nadia.va...', 4, Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/nadia.va...', 4, Array)
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-23 13:25:32 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Field.templateId' in 'field list'
+Request URL: /news-maker/admin/templates
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Field`....', Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `Field`....', Array, Array)
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(1343): DboSource->fetchAll('SELECT `Field`....', false)
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(1205): DboSource->fetchAssociated(Object(Template), 'SELECT `Field`....', Array)
+#5 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(1116): DboSource->queryAssociation(Object(Template), Object(Field), 'hasMany', 'Field', Array, Array, true, Array, 0, Array)
+#6 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(2694): DboSource->read(Object(Template), Array)
+#7 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#8 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(1074): PaginatorComponent->paginate('Template', Array, Array)
+#9 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Controller/TemplatesController.php(34): Controller->paginate('Template')
+#10 [internal function]: TemplatesController->admin_index()
+#11 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(TemplatesController), Array)
+#12 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TemplatesController), Object(CakeRequest), Object(CakeResponse))
+#14 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-01-23 13:27:04 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Model/Field.php, line 29]
+2015-01-23 13:27:04 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /news-maker/admin/templates
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/nadia.va...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/nadia.va...', 29, Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/nadia.va...', 29, Array)
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-23 13:27:52 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /news-maker/admin/templates/del/10
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('DELETE `Field` ...', Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/Database/Mysql.php(419): DboSource->execute('DELETE `Field` ...')
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(2425): Mysql->delete(Object(Field), Array)
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Model/Field.php(29): Model->delete(Array)
+#5 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Controller/TemplatesController.php(86): Field->delfields('10')
+#6 [internal function]: TemplatesController->admin_del('10')
+#7 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(TemplatesController), Array)
+#8 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TemplatesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-01-23 13:29:06 Error: [MissingViewException] View file "/Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/plugins/Adminable/View/Themed/Adminus/Templates/admin_del.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/plugins/Adminable/View/Themed/Adminus/Templates/admin_del.ctp',
+)
+Request URL: /news-maker/admin/templates/del/10
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TemplatesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-23 19:28:49 Error: [MissingTableException] Table newsletter_fields for model NewsletterField was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'newsletter_fields',
+  'class' => 'NewsletterField',
+  'ds' => 'default',
+)
+Request URL: /news-maker/admin/newsletters/add
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(3237): Model->setSource('newsletter_fiel...')
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(1319): Model->getDataSource()
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(1194): Model->schema()
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(1157): Model->_setAliasData(Array)
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/ModelValidator.php(215): Model->set(Array)
+#5 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(2158): ModelValidator->validateMany(Array, Array)
+#6 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(2091): Model->validateMany(Array, Array)
+#7 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Controller/NewslettersController.php(51): Model->saveMany(Array)
+#8 [internal function]: NewslettersController->admin_add()
+#9 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(NewslettersController), Array)
+#10 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewslettersController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-01-23 19:30:04 Error: [MissingTableException] Table newsletter_fields for model NewsletterField was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'newsletter_fields',
+  'class' => 'NewsletterField',
+  'ds' => 'default',
+)
+Request URL: /news-maker/admin/newsletters/add
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(3237): Model->setSource('newsletter_fiel...')
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(1319): Model->getDataSource()
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(1194): Model->schema()
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(1157): Model->_setAliasData(Array)
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/ModelValidator.php(215): Model->set(Array)
+#5 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(2158): ModelValidator->validateMany(Array, Array)
+#6 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(2091): Model->validateMany(Array, Array)
+#7 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Controller/NewslettersController.php(51): Model->saveMany(Array)
+#8 [internal function]: NewslettersController->admin_add()
+#9 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(NewslettersController), Array)
+#10 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewslettersController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-01-23 19:48:37 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'loadModel' at line 1
+Request URL: /news-maker/admin/newsletters/add
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('loadModel', Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('loadModel', Array, Array)
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('loadModel', Array, Array)
+#4 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(800): DboSource->query('loadModel', Array, Object(Newsletter))
+#5 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Model/Newsletter.php(31): Model->__call('loadModel', Array)
+#6 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Model/Newsletter.php(31): Newsletter->loadModel('Template')
+#7 [internal function]: Newsletter->afterSave(true, Array)
+#8 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#9 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Model/Model.php(1770): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Controller/NewslettersController.php(45): Model->save(Array)
+#11 [internal function]: NewslettersController->admin_add()
+#12 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(NewslettersController), Array)
+#13 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#14 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewslettersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-01-23 20:01:17 Error: [MissingActionException] Action NewslettersController::admin_edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'NewslettersController',
+  'action' => 'admin_edit',
+)
+Request URL: /news-maker/admin/newsletters/edit/10
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewslettersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-23 20:36:10 Error: Fatal Error (1): Call to a member function read() on a non-object in [/Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/app/Controller/NewslettersController.php, line 63]
+2015-01-23 20:36:10 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /news-maker/admin/newsletters/edit/10
+Stack Trace:
+#0 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/nadia.va...', 63)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/nadia.va...', 63, Array)
+#2 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/nadia.va...', 63, Array)
+#3 /Users/nadia.vasconcelos/Sites/NewsMaker/news-maker/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

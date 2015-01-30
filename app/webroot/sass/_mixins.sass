@@ -1,0 +1,27 @@
+@mixin ellipsis()
+	overflow: hidden
+	white-space: nowrap
+	text-overflow: ellipsis
+
+@mixin word-wrap()
+	-ms-word-break: break-all
+	word-break: break-all
+	word-break: break-word
+	-webkit-hyphens: auto
+	-moz-hyphens: auto
+	hyphens: auto
+
+@mixin size($width, $height)
+	width: $width
+	height: $height
+
+@mixin fixed($top, $left)
+	top: $top
+	left: $left
+
+@mixin square($size)
+	@include size($size, $size)
+
+@mixin sprite_size($width, $height)
+	@include inline-block
+	@include size($width, $height)
