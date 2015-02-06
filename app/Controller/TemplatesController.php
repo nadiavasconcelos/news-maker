@@ -92,9 +92,19 @@ class TemplatesController extends AppController {
 		}
 	}
 
-	public function admin_calltemplates($client_id){
+	public function admin_cliente($cliente_id){
+		$this->Template->recursive = 1;
+		
+		$conditions[] = array(
+			'Template.cliente_id' => $cliente_id
+		);
+		$this->paginate['conditions'] = $conditions;
+		$this->set('templates', $this->paginate('Template'));
+	}
+
+	public function admin_calltemplates($cliente_id){
 		$this->autoRender = false;
-		$arrTemplates = $this->Template->listtemplates($client_id);
+		$arrTemplates = $this->Template->listtemplates($cliente_id);
 		foreach ($arrTemplates as $key => $value) {
 			$arr["label"] = $value;
 			$arr["value"] = $key;

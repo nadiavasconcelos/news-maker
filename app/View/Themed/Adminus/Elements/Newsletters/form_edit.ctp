@@ -5,7 +5,7 @@
 		<?php echo $this->Form->hidden('id'); ?>
 		<?php echo $this->Admin->input('assunto', array('label' => 'Assunto', 'help' => 'Assunto do E-mail')) ?>
 		<?php echo $this->Admin->input('url', array('label' => 'URL', 'help' => 'URL do HTML')) ?>
-		<?php echo $this->Admin->input('template_id', array('label' => 'Template', 'help' => 'Escolha o Template')) ?>
+		<?php echo $this->Admin->input('template_id', array('type' => 'hidden')) ?>
 	</fieldset>
 
 	<fieldset id="fsCamposDinamicos">
@@ -14,11 +14,13 @@
 		<?php
 		if( isset($fields) ):
 		foreach ($fields as $key => $field) {
+			// debug( $field ); die();
 			?>
 			<div class="dynamicFields" data-index="<?= $key ?>">
 				<?php echo $this->Form->hidden('NewsletterField.'.$key.'.id'); ?>
-				<?php echo $this->Admin->input('NewsletterField.'.$key.'.value', array('label' => 'Content')) ?>
-				<?php echo $this->Html->link('<i class="icon-trash icon-white"></i>', array(), array('escape' => false, 'class' => 'btn btn-danger btn-small btnDelField', 'title' => 'Excluir')); ?>
+				<?php echo $this->Form->hidden('NewsletterField.'.$key.'.newsletter_id'); ?>
+				<?php echo $this->Form->hidden('NewsletterField.'.$key.'.field_id'); ?>
+				<?php echo $this->Admin->input('NewsletterField.'.$key.'.value', array('label' => $field['Field']['field'])) ?>
 			</div>
 			<?php
 		}

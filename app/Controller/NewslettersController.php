@@ -61,6 +61,8 @@ class NewslettersController extends AppController {
 			$this->request->data = $this->Newsletter->read();
 			$this->set('fields', $this->request->data['NewsletterField']);
 		} else {
+			// debug( $this->request->data );
+			// die();
 			if ($this->Newsletter->save($this->request->data)) {
 				foreach ($this->request->data['NewsletterField'] as $key => $field) {
 					$this->request->data['NewsletterField'][$key]['template_id'] = $this->Newsletter->id;
@@ -83,5 +85,25 @@ class NewslettersController extends AppController {
 				$this->setFlashMessage('Newsletter excluída com sucesso!', 'success', array('action' => 'index'));
 			}
 		}
+	}
+
+	public function admin_cliente($cliente_id){
+		$this->Newsletter->recursive = 2;
+		
+		$conditions[] = array(
+			'Template.cliente_id' => $cliente_id
+		);
+		$this->paginate['conditions'] = $conditions;
+		$this->set('newsletters', $this->paginate('Newsletter'));
+	}
+
+	public function admin_template($template_id){
+		$this->Newsletter->recursive = 2;
+		
+		$conditions[] = array(
+			'Newsletter.template_id' => $template_id
+		);
+		$this->paginate['conditions'] = $conditions;
+		$this->set('newsletters', $this->paginate('Newsletter'));
 	}
 }

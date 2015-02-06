@@ -24,8 +24,8 @@
 							<td width="160">
 								<?php echo $this->Html->link('<i class="icon-pencil icon-white"></i>', array('action' => 'edit', $cliente['Cliente']['id']), array('title' => 'Editar', 'escape' => false, 'class' => 'btn btn-small btn-warning')); ?>
 								<?php echo $this->Html->link('<i class="icon-trash icon-white"></i>', array('action' => 'del', $cliente['Cliente']['id']), array('escape' => false, 'class' => 'btn btn-danger btn-small', 'title' => 'Excluir'), 'Deseja realmente excluir este cliente?'); ?>
-								<?php echo $this->Html->link('<i class="icon-book icon-white"></i>', array('action' => 'edit', $cliente['Cliente']['id']), array('title' => 'Templates', 'escape' => false, 'class' => 'btn btn-small btn-primary')); ?>
-								<?php echo $this->Html->link('<i class="icon-th icon-white"></i>', array('action' => 'edit', $cliente['Cliente']['id']), array('title' => 'Newsletters', 'escape' => false, 'class' => 'btn btn-small btn-info')); ?>
+								<?php echo $this->Html->link('<i class="icon-book icon-white"></i>', array('controller' => 'templates', 'action' => 'cliente', $cliente['Cliente']['id']), array('title' => 'Templates', 'escape' => false, 'class' => 'btn btn-small btn-primary')); ?>
+								<?php echo $this->Html->link('<i class="icon-th icon-white"></i>', array('controller' => 'newsletters', 'action' => 'cliente', $cliente['Cliente']['id']), array('title' => 'Newsletters', 'escape' => false, 'class' => 'btn btn-small btn-info')); ?>
 							</td>
 						</tr>
 						<?php $count++ ?>
